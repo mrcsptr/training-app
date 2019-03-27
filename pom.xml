@@ -65,6 +65,14 @@
 			<artifactId>sonar-maven-plugin</artifactId>
 			<version>3.4.0.905</version>
 		</plugin>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-scm-plugin</artifactId>
+			<version>1.10.0</version>
+			<configuration>
+			<goals>install</goals>
+			</configuration>
+		</plugin>
 	</plugins>
 	</build>
 	<distributionManagement>
@@ -79,4 +87,10 @@
 <url>http://localhost:8081/repository/maven-snapshots</url>
 </snapshotRepository>
 </distributionManagement>
+<scm>
+<connection>scm:git:https://github.com/mrcsptr/training-app.git</connection>
+<developerConnection>scm:git:https://github.com/mrcsptr/training-app.git</developerConnection>
+<url>https://github.com/mrcsptr/training-app</url>
+<tag>master</tag>
+</scm>
 </project>
